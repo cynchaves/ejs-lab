@@ -11,56 +11,56 @@
   <h3>Main Dishes:</h3>
   <% menu.forEach((item) => { %>
   <% if (item.category === 'mains' && item.rating === 5) { %>
-       <ul>
-         <li> <%= item.name %> &#127775 %> </li> 
-         <li> $<%= item.price %> </li>
-         <li> <%= item.details %></li>
-         <li> <%= item.rating %> stars </li>
-       </ul>
+      <ul>
+        <li> <%= item.name %> &#127775 %> </li> 
+        <li> $<%= item.price %> </li>
+        <li> <%= item.details %></li>
+        <li> <%= item.rating %> stars </li>
+      </ul>
   <% } else if (item.category === 'mains' && item.rating !== 5) { %>
-    <ul>
-      <li> <%= item.name %> </li> 
-      <li> $<%= item.price %> </li>
-      <li> <%= item.details %></li>
-      <li> <%= item.rating %> stars </li>
-    </ul>
- <% } %>
+      <ul>
+        <li> <%= item.name %> </li> 
+        <li> $<%= item.price %> </li>
+        <li> <%= item.details %></li>
+        <li> <%= item.rating %> stars </li>
+      </ul>
+    <% } %>
   <% }) %>
   <h3>Side Dish:</h3>
   <% menu.forEach((item) => { %>
-    <% if (item.category === 'sides' && item.rating === 5) { %>
-         <ul>
-           <li> <%= item.name %> &#127775 %> </li> 
-           <li> $<%= item.price %> </li>
-           <li> <%= item.details %></li>
-           <li> <%= item.rating %> stars </li>
-         </ul>
-    <% } else if (item.category === 'sides' && item.rating !== 5) { %>
+  <% if (item.category === 'sides' && item.rating === 5) { %>
+      <ul>
+        <li> <%= item.name %> &#127775 %> </li> 
+        <li> $<%= item.price %> </li>
+        <li> <%= item.details %></li>
+        <li> <%= item.rating %> stars </li>
+      </ul>
+  <% } else if (item.category === 'sides' && item.rating !== 5) { %>
       <ul>
         <li> <%= item.name %> </li> 
         <li> $<%= item.price %> </li>
         <li> <%= item.details %></li>
         <li> <%= item.rating %> stars </li>
       </ul>
-   <% } %>
-    <% }) %>
+    <% } %>
+  <% }) %>
   <h3>Desserts:</h3>
   <% menu.forEach((item) => { %>
-    <% if (item.category === 'desserts' && item.rating === 5) { %>
-         <ul>
-           <li> <%= item.name %> &#127775 %> </li> 
-           <li> $<%= item.price %> </li>
-           <li> <%= item.details %></li>
-           <li> <%= item.rating %> stars </li>
-         </ul>
-    <% } else if (item.category === 'desserts' && item.rating !== 5) { %>
+  <% if (item.category === 'desserts' && item.rating === 5) { %>
+      <ul>
+        <li> <%= item.name %> &#127775 %> </li> 
+        <li> $<%= item.price %> </li>
+        <li> <%= item.details %></li>
+        <li> <%= item.rating %> stars </li>
+      </ul>
+  <% } else if (item.category === 'desserts' && item.rating !== 5) { %>
       <ul>
         <li> <%= item.name %> </li> 
         <li> $<%= item.price %> </li>
         <li> <%= item.details %></li>
         <li> <%= item.rating %> stars </li>
       </ul>
-   <% } %>
-    <% }) %>
+    <% } %>
+  <% }) %>
 </body>
 </html>
