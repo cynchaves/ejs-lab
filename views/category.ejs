@@ -9,12 +9,21 @@
   <%- include('./partials/nav.ejs') %>
   <h1> <%= category %> </h1>
   <% menuItems.forEach((item) => { %>
+  <% if (item.rating === 5) { %>
+       <ul>
+         <li> <%= item.name %> &#127775 %> </li> 
+         <li> $<%= item.price %> </li>
+         <li> <%= item.details %></li>
+         <li> <%= item.rating %> stars </li>
+       </ul>
+    <% } else { %>
        <ul>
          <li> <%= item.name %> </li> 
          <li> $<%= item.price %> </li>
          <li> <%= item.details %></li>
          <li> <%= item.rating %> stars </li>
-       </ul>
-    <% }) %>
+       </ul> 
+    <% } %>
+  <% })%>
 </body>
 </html>
